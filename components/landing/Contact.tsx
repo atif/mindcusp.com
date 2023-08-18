@@ -10,9 +10,9 @@ function Contact() {
 
       <div className="flex space-x-24">
         <Image
-          src="/landing/undraw_contact_us_re_4qqt.svg"
-          height={600}
-          width={600}
+          src="/landing/undraw_mailbox_re_dvds.svg"
+          height={500}
+          width={500}
           alt={""}
         />
         <div className="flex flex-col space-y-5 justify-center">

@@ -10,17 +10,7 @@ import Link from "next/link";
 export default function Landing() {
   return (
     <main className="font-poppins flex min-h-screen flex-col items-center justify-between">
-      <div className="z-10 w-full items-center justify-between text-sm lg:flex sticky top-0 p-5 px-24 bg-white">
-        <Image src="/mindcusp-logo.svg" height={250} width={250} alt={""} />
-        <Link
-          href="/"
-          className="font-poppins text-2xl font-semibold tracking-wide text-gray-700"
-        >
-          mindcusp
-        </Link>
-
-        <Navbar />
-      </div>
+      <Navbar />
       <div className="flex flex-col px-24 space-y-10 items-center">
         <div id="home" className="h-screen flex items-top">
           <Home />
