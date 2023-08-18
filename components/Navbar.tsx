@@ -10,11 +10,11 @@ const navLinks = [
     section: "home",
   },
   {
-    name: "Our Work",
-    section: "work",
+    name: "Case Studies",
+    section: "case-studies",
   },
   {
-    name: "Tech stack",
+    name: "Technology Stack",
     section: "tech-stack",
   },
   {
@@ -28,11 +28,11 @@ function Navbar() {
 
   return (
     <nav className="z-10 w-full items-center justify-between text-sm lg:flex sticky top-0 p-5 px-24 bg-white">
-      <Image src="/mindcusp-logo.svg" height={250} width={250} alt={""} />
       <Link
         href="/"
         className="font-poppins text-2xl font-semibold tracking-wide text-gray-700"
       >
+        <Image src="/mindcusp-logo.svg" height={250} width={250} alt={""} />
         mindcusp
       </Link>
 
@@ -50,7 +50,7 @@ function Navbar() {
                 activeLink === link.name
                   ? "text-primary-600 font-semibold bg-primary-100"
                   : ""
-              } hover:bg-primary-100 hover:text-primary-600 rounded-full p-2 px-3 tracking-wide`}
+              } hover:bg-primary-100 font-medium hover:text-primary-600 rounded-full p-2 px-3 tracking-wide`}
             >
               {link.name}
             </Link>

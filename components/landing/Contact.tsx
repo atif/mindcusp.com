@@ -66,6 +66,7 @@ function Contact() {
               borderRadius={"full"}
               background={"brand.200"}
               _hover={{ bg: "brand.300" }}
+              color={"brand.700"}
             >
               Send
             </Button>
