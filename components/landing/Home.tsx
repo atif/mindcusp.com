@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Button } from "@mantine/core";
 
 function Home() {
   return (
@@ -22,9 +21,6 @@ function Home() {
         Our goal is to help early stage startups to build their MVPs that can be
         easily maintained. Our team works with you on your business idea from
         start and guide you on how to launch it in minimal time.
-        <Button size="lg" radius={"xl"}>
-          Get a quote
-        </Button>
       </div>
     </>
   );

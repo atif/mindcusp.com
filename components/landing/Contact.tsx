@@ -1,7 +1,15 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { TextInput } from "@mantine/core";
+import {
+  FormControl,
+  FormLabel,
+  FormHelperText,
+  Input,
+  Text,
+  Textarea,
+  Button,
+} from "@chakra-ui/react";
 
 function Contact() {
   return (
@@ -25,16 +33,43 @@ function Contact() {
             support you. Complete the contact form provided below to inform us
             about the ways we can be of assistance.
           </div>
-          <form>
-            <div className="flex flex-col space-y-5 py-5">
-              <TextInput placeholder="Enter your name" radius="xl" size="lg" />
-              <TextInput
-                placeholder="Enter your email address"
-                radius="xl"
-                size="lg"
-              />
-            </div>
-          </form>
+          <div className="flex flex-col space-y-5 py-5">
+            <Input
+              type="name"
+              borderRadius="full"
+              size={"lg"}
+              placeholder={"Please enter your name"}
+            />
+
+            <Input
+              type="email"
+              borderRadius="full"
+              size={"lg"}
+              placeholder={"Please enter your email address"}
+            />
+
+            <Input
+              type="subject"
+              borderRadius="full"
+              size={"lg"}
+              placeholder={"Please choose a subject"}
+            />
+
+            <Textarea
+              borderRadius="lg"
+              size={"lg"}
+              placeholder={"Write your message here"}
+            />
+
+            <Button
+              size="lg"
+              borderRadius={"full"}
+              background={"brand.200"}
+              _hover={{ bg: "brand.300" }}
+            >
+              Send
+            </Button>
+          </div>
         </div>
       </div>
     </div>

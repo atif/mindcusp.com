@@ -38,6 +38,9 @@ const techStacks = [
       {
         name: "Elixir",
       },
+      {
+        name: "GraphQL",
+      },
     ],
   },
   {
@@ -79,9 +82,6 @@ const techStacks = [
       },
       {
         name: "MongoDB",
-      },
-      {
-        name: "GraphQL",
       },
     ],
   },
