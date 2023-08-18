@@ -30,10 +30,10 @@ function Navbar() {
     <nav className="z-10 w-full items-center justify-between text-sm lg:flex sticky top-0 p-5 px-24 bg-white">
       <Link
         href="/"
-        className="font-poppins text-2xl font-semibold tracking-wide text-gray-700"
+        className="flex space-x-2 items-center font-poppins text-2xl font-semibold tracking-wide text-gray-700"
       >
         <Image src="/mindcusp-logo.svg" height={250} width={250} alt={""} />
-        mindcusp
+        <span>mindcusp</span>
       </Link>
 
       <nav className="font-inter flex text-base tracking-wide space-x-1">
@@ -43,7 +43,9 @@ function Navbar() {
               key={link.name}
               href={`#${link.section}`}
               onClick={() => {
-                scrollTo(link.section, 50);
+                // scrollTo(link.section, 50);
+
+                console.log(link.name);
                 setActiveLink(link.name);
               }}
               className={`${

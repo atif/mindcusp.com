@@ -35,6 +35,7 @@ function Contact() {
           </div>
           <div className="flex flex-col space-y-5 py-5">
             <Input
+              focusBorderColor={"brand.300"}
               type="name"
               borderRadius="full"
               size={"lg"}
@@ -42,6 +43,7 @@ function Contact() {
             />
 
             <Input
+              focusBorderColor={"brand.300"}
               type="email"
               borderRadius="full"
               size={"lg"}
@@ -49,6 +51,7 @@ function Contact() {
             />
 
             <Input
+              focusBorderColor={"brand.300"}
               type="subject"
               borderRadius="full"
               size={"lg"}
@@ -57,6 +60,7 @@ function Contact() {
 
             <Textarea
               borderRadius="lg"
+              focusBorderColor={"brand.300"}
               size={"lg"}
               placeholder={"Write your message here"}
             />
@@ -64,8 +68,8 @@ function Contact() {
             <Button
               size="lg"
               borderRadius={"full"}
-              background={"brand.200"}
-              _hover={{ bg: "brand.300" }}
+              background={"brand.100"}
+              _hover={{ bg: "brand.200" }}
               color={"brand.700"}
             >
               Send

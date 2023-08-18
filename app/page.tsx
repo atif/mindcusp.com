@@ -12,7 +12,7 @@ export default function Landing() {
     <main className="font-poppins flex min-h-screen flex-col items-center justify-between">
       <Navbar />
       <div className="flex flex-col px-24 space-y-10 items-center">
-        <div id="home" className="h-screen flex items-center pb-48">
+        <div id="home" className="h-screen flex items-center pb-24">
           <Home />
         </div>
 
