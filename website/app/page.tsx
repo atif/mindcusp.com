@@ -1,4 +1,4 @@
-import Navbar from "@/components/common/Navbar";
+import Navbar from "@/components/Navbar";
 import Contact from "@/components/landing/Contact";
 import Home from "@/components/landing/Home";
 import TechStack from "@/components/landing/TechStack";
@@ -9,6 +9,7 @@ export default function Landing() {
   return (
     <main className="font-poppins flex min-h-screen flex-col items-center justify-between px-48 flex-wrap ">
       <div className="z-10 w-full items-center justify-between text-sm lg:flex sticky top-0 p-5 bg-white">
+        <Image src="/mindcusp-logo.svg" height={250} width={250} alt={""} />
         <Link
           href="/"
           className="font-poppins text-2xl font-semibold tracking-wide text-gray-700"
