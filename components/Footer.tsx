@@ -1,9 +1,15 @@
 "use client";
 import React from "react";
-
+import Image from "next/image";
 function Footer() {
   return (
-    <div className="flex bg-primary-50 w-full px-24">
+    <div className="flex bg-primary-50 w-full px-24 space-x-10">
+      <Image
+        src="/landing/undraw_contact_us_re_4qqt.svg"
+        height={300}
+        width={300}
+        alt={""}
+      />
       <div className=" my-10 flex flex-col space-y-8">
         <div className="flex flex-col space-y-4">
           <div>

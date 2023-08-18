@@ -33,10 +33,18 @@ function Home() {
             <br />
             can be easily maintained. Our team works with you on your business
             <br />
-            idea from start and guides you on how to launch it in minimal time.
+            idea right from the start and make sure that we launch it in minimal
+            time.
           </div>
         </div>
-        <Button size="lg" borderRadius={"full"} width={"2xl"}>
+        <Button
+          size="lg"
+          borderRadius={"full"}
+          width={"2xl"}
+          background="brand.300"
+          color="white"
+          _hover={{ background: "brand.400" }}
+        >
           <Link href="#contact-us">Get in touch</Link>
         </Button>
       </div>

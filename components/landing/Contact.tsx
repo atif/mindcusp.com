@@ -19,8 +19,8 @@ function Contact() {
       <div className="flex space-x-24">
         <Image
           src="/landing/undraw_mailbox_re_dvds.svg"
-          height={500}
-          width={500}
+          height={400}
+          width={400}
           alt={""}
         />
         <div className="flex flex-col space-y-5 justify-center">
@@ -68,9 +68,9 @@ function Contact() {
             <Button
               size="lg"
               borderRadius={"full"}
-              background={"brand.100"}
-              _hover={{ bg: "brand.200" }}
-              color={"brand.700"}
+              background="brand.300"
+              color="white"
+              _hover={{ background: "brand.400" }}
             >
               Send
             </Button>

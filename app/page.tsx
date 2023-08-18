@@ -12,21 +12,21 @@ export default function Landing() {
     <main className="font-poppins flex min-h-screen flex-col items-center justify-between">
       <Navbar />
       <div className="flex flex-col px-24 space-y-10 items-center">
-        <div id="home" className="h-screen flex items-center pb-24">
+        <section id="home" className="h-screen flex items-center">
           <Home />
-        </div>
+        </section>
 
-        <div id="case-studies" className="h-screen flex items-center">
+        <section id="case-studies" className="h-screen flex items-center">
           <Work />
-        </div>
+        </section>
 
-        <div id="tech-stack" className="h-screen flex items-center">
+        <section id="tech-stack" className="h-screen flex items-center">
           <TechStack />
-        </div>
+        </section>
 
-        <div id="contact-us" className="h-screen flex items-center">
+        <section id="contact-us" className="h-screen flex items-center">
           <Contact />
-        </div>
+        </section>
       </div>
 
       <Footer />
