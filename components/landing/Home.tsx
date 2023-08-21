@@ -25,7 +25,7 @@ function Home() {
             We are a team of developers who are passionate about <br />
             crafting scalable web applications.
           </span>
-          <div className="md:w-2/3">
+          <div>
             Our goal is to help early stage startups to build their MVPs that
             can be easily maintained. Our team works with you on your business
             idea right from the start and make sure that we launch it in minimal
