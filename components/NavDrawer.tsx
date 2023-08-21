@@ -58,7 +58,7 @@ function NavDrawer() {
 
           <DrawerBody>
             <div className="flex flex-col space-y-2">
-              <NavLinks />
+              <NavLinks onClick={onClose} />
             </div>
           </DrawerBody>
         </DrawerContent>

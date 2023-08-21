@@ -9,16 +9,16 @@ const navLinks = [
   {
     name: "Technology Stack",
     section: "tech-stack",
-    offset: 0,
+    offset: -50,
   },
   {
     name: "Contact us",
     section: "contact-us",
-    offset: 0,
+    offset: -80,
   },
 ];
 
-function NavLinks() {
+function NavLinks({ onClick }) {
   return (
     <>
       {navLinks.map((link) => {
@@ -31,6 +31,7 @@ function NavLinks() {
             duration={30}
             offset={link.offset}
             to={link.section}
+            onClick={onClick}
             className={`hover:bg-primary-100 font-medium hover:text-primary-600 rounded-full p-2 px-3 tracking-wide cursor-pointer`}
           >
             {link.name}
