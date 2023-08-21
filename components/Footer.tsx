@@ -2,7 +2,7 @@
 import Image from "next/image";
 function Footer() {
   return (
-    <div className="flex bg-primary-50 w-full px-24 space-x-10">
+    <div className="flex bg-primary-50 w-full sm:px-5 sm:pt-5 lg:pt-0 lg:px-24 lg:space-x-10 sm:flex-col lg:flex-row">
       <Image
         src="/landing/undraw_contact_us_re_4qqt.svg"
         height={300}

@@ -5,5 +5,5 @@
     "source.sortMembers": true
   },
   "search.quickOpen.includeHistory": false,
-  "typescript.preferences.importModuleSpecifier": "relative"
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }

@@ -6,8 +6,7 @@ function Contact() {
   return (
     <div className="flex flex-col space-y-16">
       <div className="font-bold text-4xl text-center my-5">Contact us</div>
-
-      <div className="flex space-x-24">
+      <div className="flex lg:space-x-24 lg:flex-row sm:flex-col sm:space-y-16 md:space-y-0">
         <Image
           src="/landing/undraw_mailbox_re_dvds.svg"
           height={400}

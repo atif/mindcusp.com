@@ -91,7 +91,10 @@ function TechStack() {
       </div>
       {techStacks.map((stack) => {
         return (
-          <div className="flex items-center space-x-3" key={stack.name}>
+          <div
+            className="flex items-center space-x-3 flex-wrap"
+            key={stack.name}
+          >
             <div className="text-lg font-medium uppercase tracking-wider w-36">
               {stack.area}
             </div>

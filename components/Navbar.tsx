@@ -27,7 +27,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="z-10 w-full items-center justify-between text-sm lg:flex sticky top-0 p-5 lg:px-24 bg-white sm:flex-col lg:flex-row">
+    <nav className="z-10 w-full items-center justify-between text-sm flex sticky top-0 p-5 lg:px-24 bg-white">
       <ScrollLink
         smooth
         spy
@@ -44,7 +44,26 @@ function Navbar() {
         <span>mindcusp</span>
       </ScrollLink>
 
-      <nav className="font-inter flex text-base tracking-wide lg:space-x-1 sm:flex-col sm:space-y-1 lg:space-y-0 lg:flex-row">
+      <nav className="hidden font-inter lg:flex text-base tracking-wide lg:space-x-1 sm:flex-col sm:space-y-1 lg:space-y-0 lg:flex-row">
+        {navLinks.map((link) => {
+          return (
+            <ScrollLink
+              key={link.name}
+              activeClass="text-primary-600 font-semibold bg-primary-100"
+              smooth
+              spy
+              duration={30}
+              offset={link.offset}
+              to={link.section}
+              className={`hover:bg-primary-100 font-medium hover:text-primary-600 rounded-full p-2 px-3 tracking-wide cursor-pointer`}
+            >
+              {link.name}
+            </ScrollLink>
+          );
+        })}
+      </nav>
+
+      <nav className="flex font-inter lg:hidden text-base tracking-wide lg:space-x-1 sm:flex-col sm:space-y-1 lg:space-y-0 lg:flex-row">
         {navLinks.map((link) => {
           return (
             <ScrollLink
