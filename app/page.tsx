@@ -3,9 +3,6 @@ import Navbar from "@/components/Navbar";
 import Contact from "@/components/landing/Contact";
 import Home from "@/components/landing/Home";
 import TechStack from "@/components/landing/TechStack";
-import Work from "@/components/landing/Work";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Landing() {
   return (
@@ -16,15 +13,11 @@ export default function Landing() {
           <Home />
         </section>
 
-        <section id="case-studies" className="h-screen flex items-center">
-          <Work />
-        </section>
-
-        <section id="tech-stack" className="h-screen flex items-center">
+        <section id="tech-stack" className="h-screen flex items-center pt-20">
           <TechStack />
         </section>
 
-        <section id="contact-us" className="h-screen flex items-center">
+        <section id="contact-us" className="h-screen flex items-center pt-20">
           <Contact />
         </section>
       </div>

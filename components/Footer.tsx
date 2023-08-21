@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Image from "next/image";
 function Footer() {
   return (
@@ -22,7 +21,7 @@ function Footer() {
           </div>
         </div>
         <div>
-          COPYRIGHT &copy; {new Date().getFullYear()} &mdash;{" "}
+          COPYRIGHT &copy; {new Date().getFullYear()} &bull;{" "}
           <span className="text-primary-600 font-semibold">mindcusp</span>
         </div>
       </div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 function Work() {
   return (
     <div className="flex flex-col space-y-2">

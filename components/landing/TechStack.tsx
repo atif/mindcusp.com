@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 const techStacks = [
   {
@@ -37,9 +36,6 @@ const techStacks = [
       { name: "PHP" },
       {
         name: "Elixir",
-      },
-      {
-        name: "GraphQL",
       },
     ],
   },

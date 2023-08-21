@@ -1,15 +1,6 @@
 "use client";
-import React from "react";
+import { Button, Input, Textarea } from "@chakra-ui/react";
 import Image from "next/image";
-import {
-  FormControl,
-  FormLabel,
-  FormHelperText,
-  Input,
-  Text,
-  Textarea,
-  Button,
-} from "@chakra-ui/react";
 
 function Contact() {
   return (

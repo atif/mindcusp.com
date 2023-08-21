@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
-import Image from "next/image";
 import { Button } from "@chakra-ui/react";
 import { useScroll } from "framer-motion";
-import Link from "next/link";
+import Image from "next/image";
+import { Link } from "react-scroll";
 
 function Home() {
   const scroll = useScroll();
@@ -24,7 +23,7 @@ function Home() {
         <div className="mx-24 text-2xl text-center leading-relaxed">
           <span className="text-3xl font-semibold">
             We are a team of developers who are passionate about <br />
-            crafting scalable web based software.
+            crafting scalable web applications.
           </span>
           <br />
           <br />
@@ -45,7 +44,15 @@ function Home() {
           color="white"
           _hover={{ background: "brand.400" }}
         >
-          <Link href="#contact-us">Get in touch</Link>
+          <Link
+            activeClass="text-primary-600 font-semibold bg-primary-100"
+            smooth
+            spy
+            duration={30}
+            to="contact-us"
+          >
+            Get in touch
+          </Link>
         </Button>
       </div>
     </>
