@@ -1,8 +1,8 @@
 import Footer from "@/components/Footer";
+import Contact from "@/components/Landing/Contact";
+import Home from "@/components/Landing/Home";
+import TechStack from "@/components/Landing/TechStack";
 import Navbar from "@/components/Navbar";
-import Contact from "@/components/landing/Contact";
-import Home from "@/components/landing/Home";
-import TechStack from "@/components/landing/TechStack";
 
 export default function Landing() {
   return (

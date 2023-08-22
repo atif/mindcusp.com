@@ -46,6 +46,7 @@ function Home() {
               smooth
               spy
               duration={30}
+              offset={-80}
               to="contact-us"
             >
               Get in touch

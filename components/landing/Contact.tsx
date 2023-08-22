@@ -1,5 +1,5 @@
 "use client";
-import ContactForm from "@/components/landing/ContactForm";
+import ContactForm from "@/components/Landing/ContactForm";
 import Image from "next/image";
 
 function Contact() {

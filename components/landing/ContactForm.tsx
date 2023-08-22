@@ -1,9 +1,16 @@
 import {
+  Alert,
+  AlertDescription,
+  AlertIcon,
+  AlertTitle,
+  Box,
   Button,
+  CloseButton,
   FormControl,
   FormErrorMessage,
   Input,
   Textarea,
+  useDisclosure,
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
@@ -12,22 +19,76 @@ function ContactForm() {
   const {
     handleSubmit,
     register,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm();
+
+  const {
+    isOpen: isErrorVisible,
+    onClose: onErrorClose,
+    onOpen: onErrorOpen,
+  } = useDisclosure({ defaultIsOpen: false });
+
+  const {
+    isOpen: isSuccessVisible,
+    onClose: onSuccessClose,
+    onOpen: onSuccessOpen,
+  } = useDisclosure({ defaultIsOpen: false });
 
   function onSubmit(values) {
     axios
       .post(`/mail/api`, { values })
       .then((response) => {
-        console.log("Email sent");
+        onErrorClose();
+        onSuccessOpen();
+        reset();
       })
       .catch((error) => {
-        console.log("Some error occured while sending the email");
+        onErrorOpen();
+        onSuccessClose();
       });
   }
 
   return (
     <div>
+      {isErrorVisible && (
+        <Alert status="error" borderRadius={"lg"}>
+          <AlertIcon />
+          <Box width={"full"}>
+            <AlertTitle>Error!</AlertTitle>
+            <AlertDescription>
+              Some error occured while sending the email. Please try again!
+            </AlertDescription>
+          </Box>
+          <CloseButton
+            alignSelf="flex-start"
+            position="relative"
+            right={-1}
+            top={-1}
+            onClick={onErrorClose}
+          />
+        </Alert>
+      )}
+
+      {isSuccessVisible && (
+        <Alert status="success" borderRadius={"lg"}>
+          <AlertIcon />
+          <Box width={"full"}>
+            <AlertTitle>Success!</AlertTitle>
+            <AlertDescription>
+              Your message has been sent. We will get back to you!
+            </AlertDescription>
+          </Box>
+          <CloseButton
+            alignSelf="flex-start"
+            position="relative"
+            right={-1}
+            top={-1}
+            onClick={onSuccessClose}
+          />
+        </Alert>
+      )}
+
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col space-y-5 py-5"
