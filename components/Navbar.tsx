@@ -16,8 +16,8 @@ function Navbar() {
       >
         <Image
           src="/mindcusp-logo.svg"
-          height={45}
-          width={45}
+          height={50}
+          width={50}
           alt={"mindcusp logo"}
         />
         <span>mindcusp</span>
