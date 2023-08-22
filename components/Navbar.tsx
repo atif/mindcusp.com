@@ -2,14 +2,9 @@
 import NavDrawer from "@/components/NavDrawer";
 import NavLinks from "@/components/NavLinks";
 import Image from "next/image";
-import { useEffect } from "react";
-import { Link as ScrollLink, animateScroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 function Navbar() {
-  useEffect(() => {
-    animateScroll.scrollTo(100);
-  }, []);
-
   return (
     <nav className="z-10 w-full items-center justify-between text-sm flex sticky top-0 p-5 lg:px-24 bg-white">
       <ScrollLink

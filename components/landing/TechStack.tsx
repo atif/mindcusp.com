@@ -92,23 +92,23 @@ function TechStack() {
       {techStacks.map((stack) => {
         return (
           <div
-            className="flex items-center space-x-3 flex-wrap"
+            className="flex sm:flex-col sm:space-y-5 lg:space-y-0 lg:flex-row items-center lg:space-x-3"
             key={stack.name}
           >
-            <div className="text-lg font-medium uppercase tracking-wider w-36">
+            <div className="sm:text-2xl lg:text-xl font-semibold uppercase tracking-wider sm:mt-10 lg:mt-0">
               {stack.area}
             </div>
             {stack.technologies.map((technology) => {
               return (
                 <div
                   key={technology.name}
-                  className="flex flex-col cursor-pointer justify-center items-center space-y-5 hover:bg-orange-50 rounded-lg w-32 h-32 px-5"
+                  className="flex flex-col cursor-pointer justify-center items-center space-y-5 hover:bg-orange-50 rounded-lg w-48 h-48 px-5"
                 >
                   <Image
                     alt={""}
                     src={`/tech-stack/${technology.name}.svg`}
-                    width="55"
-                    height="55"
+                    width="100"
+                    height="100"
                   />
                   <div className="capitalize text-sm tracking-wider text-gray-500">
                     {technology.name}

@@ -11,7 +11,7 @@ export default function Landing() {
       <div className="flex flex-col sm:px-8 lg:px-24 sm:space-y-24 lg:space-y-10 items-center">
         <section
           id="home"
-          className="lg:mt-36 mb-16 flex items-center sm:pt-10 md:pt-0 lg:flex-row sm:flex-col sm:space-y-5 lg:space-y-0"
+          className="lg:pt-48 lg:pb-16 flex items-center sm:pt-10 md:pt-0 lg:flex-row sm:flex-col sm:space-y-5 lg:space-y-0"
         >
           <Home />
         </section>
