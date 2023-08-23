@@ -26,10 +26,9 @@ function Home() {
             crafting scalable web applications.
           </span>
           <div>
-            Our goal is to help early stage startups to build their MVPs that
-            can be easily maintained. Our team works with you on your business
-            idea right from the start and make sure that we launch it in minimal
-            time.
+            We strive to help early stage startups in building and scaling their
+            MVPs. Our team partners with you right from the start to ensure a
+            fast time-to-market for your business idea.
           </div>
         </div>
         <div className="sm:w-full lg:w-2/3">

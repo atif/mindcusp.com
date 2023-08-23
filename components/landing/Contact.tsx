@@ -20,8 +20,8 @@ function Contact() {
           <div className="text-2xl leading-relaxed">
             Whether you&apos;re seeking to create something innovative and fresh
             or require our assistance with a project in progress, we are here to
-            support you. Complete the contact form provided below to inform us
-            about the ways we can be of assistance.
+            support you. Please complete the form below to share how we can be
+            of assistance.
           </div>
 
           <ContactForm />
