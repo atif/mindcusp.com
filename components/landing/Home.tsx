@@ -32,25 +32,25 @@ function Home() {
           </div>
         </div>
         <div className="sm:w-full lg:w-2/3">
-          <Button
-            size="lg"
-            borderRadius={"full"}
-            width={"full"}
-            background="brand.300"
-            color="white"
-            _hover={{ background: "brand.400" }}
+          <Link
+            activeClass="text-primary-600 font-semibold bg-primary-100"
+            smooth
+            spy
+            duration={30}
+            offset={-80}
+            to="contact-us"
           >
-            <Link
-              activeClass="text-primary-600 font-semibold bg-primary-100"
-              smooth
-              spy
-              duration={30}
-              offset={-80}
-              to="contact-us"
+            <Button
+              size="lg"
+              borderRadius={"full"}
+              width={"full"}
+              background="brand.300"
+              color="white"
+              _hover={{ background: "brand.400" }}
             >
               Get in touch
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </div>
       </div>
     </>
