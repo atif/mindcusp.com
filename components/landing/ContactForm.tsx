@@ -181,9 +181,9 @@ function ContactForm() {
             width="full"
             size="lg"
             borderRadius={"full"}
-            background="brand.300"
+            background="brand.400"
             color="white"
-            _hover={{ background: "brand.400" }}
+            _hover={{ background: "brand.500" }}
           >
             Send
           </Button>

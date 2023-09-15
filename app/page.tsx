@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Contact from "@/components/Landing/Contact";
 import Home from "@/components/Landing/Home";
+import Services from "@/components/Landing/Services";
 import TechStack from "@/components/Landing/TechStack";
 import Navbar from "@/components/Navbar";
 
@@ -14,6 +15,13 @@ export default function Landing() {
           className="lg:pt-48 lg:pb-16 flex items-center sm:pt-10 md:pt-0 lg:flex-row sm:flex-col sm:space-y-5 lg:space-y-0"
         >
           <Home />
+        </section>
+
+        <section
+          id="services"
+          className="flex items-center sm:pt-10 md:pt-0 lg:flex-row sm:flex-col sm:space-y-5 lg:space-y-0"
+        >
+          <Services />
         </section>
 
         <section

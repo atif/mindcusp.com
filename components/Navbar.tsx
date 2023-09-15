@@ -24,7 +24,7 @@ function Navbar() {
       </ScrollLink>
 
       <nav className="hidden font-inter lg:flex text-base tracking-wide lg:space-x-1 sm:flex-col sm:space-y-1 lg:space-y-0 lg:flex-row">
-        <NavLinks onClick={undefined} />
+        <NavLinks />
       </nav>
 
       <nav className="flex font-inter lg:hidden text-base tracking-wide lg:space-x-1 sm:flex-col sm:space-y-1 lg:space-y-0 lg:flex-row">

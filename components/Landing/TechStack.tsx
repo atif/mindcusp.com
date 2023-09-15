@@ -28,6 +28,9 @@ const techStacks = [
         name: "Typescript",
       },
       {
+        name: "Javascript",
+      },
+      {
         name: "Ruby",
       },
       {
@@ -43,17 +46,21 @@ const techStacks = [
     area: "frameworks",
     technologies: [
       {
+        name: "NestJS",
+      },
+      {
+        name: "ExpressJS",
+      },
+      {
         name: "Ruby on Rails",
       },
       {
         name: "Django",
       },
       {
-        name: "NestJS",
+        name: "Laravel",
       },
-      {
-        name: "ExpressJS",
-      },
+
       {
         name: "Phoenix",
       },
@@ -92,10 +99,10 @@ function TechStack() {
       {techStacks.map((stack) => {
         return (
           <div
-            className="flex sm:flex-col sm:space-y-5 lg:space-y-0 lg:flex-row items-center lg:space-x-3"
+            className="flex sm:flex-col flex-wrap sm:space-y-5 lg:space-y-0 lg:flex-row items-center lg:space-x-3"
             key={stack.name}
           >
-            <div className="sm:text-2xl lg:text-xl font-semibold uppercase tracking-wider sm:mt-10 lg:mt-0">
+            <div className="sm:text-2xl lg:text-xl w-48 font-semibold uppercase tracking-wider sm:mt-10 lg:mt-0">
               {stack.area}
             </div>
             {stack.technologies.map((technology) => {
