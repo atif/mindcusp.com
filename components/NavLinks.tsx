@@ -7,6 +7,11 @@ const navLinks = [
     offset: -200,
   },
   {
+    name: "Clients",
+    section: "clients",
+    offset: -50,
+  },
+  {
     name: "Services",
     section: "services",
     offset: -50,

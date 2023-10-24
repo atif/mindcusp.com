@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import Clients from "@/components/Landing/Clients";
 import Contact from "@/components/Landing/Contact";
 import Home from "@/components/Landing/Home";
 import Services from "@/components/Landing/Services";
@@ -15,6 +16,13 @@ export default function Landing() {
           className="lg:pt-48 lg:pb-16 flex items-center sm:pt-10 md:pt-0 lg:flex-row sm:flex-col sm:space-y-5 lg:space-y-0"
         >
           <Home />
+        </section>
+
+        <section
+          id="clients"
+          className="lg:pt-0 lg:pb-0 flex items-center sm:pt-10 md:pt-0 lg:flex-row sm:flex-col sm:space-y-5 lg:space-y-0"
+        >
+          <Clients />
         </section>
 
         <section
