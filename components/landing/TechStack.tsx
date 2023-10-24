@@ -109,7 +109,7 @@ function TechStack() {
               return (
                 <div
                   key={technology.name}
-                  className="flex flex-col cursor-pointer justify-center items-center space-y-5 hover:bg-orange-50 rounded-lg w-48 h-48 px-5"
+                  className="flex flex-col cursor-pointer justify-center items-center space-y-5 hover:bg-primary-100 rounded-lg w-48 h-48 px-5"
                 >
                   <Image
                     alt={""}

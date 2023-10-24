@@ -6,7 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 function Navbar() {
   return (
-    <nav className="z-10 w-full items-center justify-between text-sm flex sticky top-0 p-5 lg:px-24 bg-white">
+    <nav className="bg-primary-50 z-10 w-full items-center justify-between text-sm flex sticky top-0 p-5 lg:px-24">
       <ScrollLink
         smooth
         spy

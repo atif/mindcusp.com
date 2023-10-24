@@ -44,10 +44,10 @@ function Home() {
               size="lg"
               borderRadius={"full"}
               width={"full"}
-              background="brand.400"
-              color="white"
-              _hover={{ background: "brand.500" }}
-              className="uppercase font-bold tracking-wider"
+              background="brand.100"
+              color="brand.600"
+              _hover={{ background: "brand.200" }}
+              className="uppercase font-bold tracking-wider border border-primary-200"
             >
               Request Free Consultation
             </Button>

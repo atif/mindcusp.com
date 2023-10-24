@@ -177,13 +177,13 @@ function ContactForm() {
           <Button
             isLoading={isSubmitting}
             type="submit"
-            className="sm:w-full lg:w-1/3"
+            className="sm:w-full lg:w-1/3 border border-primary-200"
             width="full"
             size="lg"
             borderRadius={"full"}
-            background="brand.400"
-            color="white"
-            _hover={{ background: "brand.500" }}
+            background="brand.100"
+            color="brand.600"
+            _hover={{ background: "brand.200" }}
           >
             Send
           </Button>
