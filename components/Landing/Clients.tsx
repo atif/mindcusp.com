@@ -23,7 +23,7 @@ const Clients = () => {
     <div className="flex flex-col space-y-2 flex-wrap">
       <div className="font-bold text-4xl text-center mt-16 mb-10">Clients</div>
 
-      <div className="flex sm:space-y-24 xl:space-y-0 xl:flex-row sm:flex-col sm:space-x-0 xl:space-x-16 flex-wrap mx-16">
+      <div className="flex sm:space-y-5 xl:space-y-0 xl:flex-row sm:flex-col sm:space-x-0 xl:space-x-16 flex-wrap mx-16">
         {clients.map((client) => {
           return (
             <Link
