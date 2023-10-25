@@ -30,7 +30,7 @@ const Clients = () => {
               href={`${client.link}`}
               target="_blank"
               key={client.image}
-              className="flex flex-col cursor-pointer justify-center items-center space-y-5 hover:bg-primary-100 rounded-lg w-48 h-48 px-5"
+              className="flex flex-col cursor-pointer justify-center items-center space-y-5 hover:bg-primary-100 rounded-lg w-64 h-64 px-5"
             >
               <Image
                 src={`/clients/${client.image}.png`}
