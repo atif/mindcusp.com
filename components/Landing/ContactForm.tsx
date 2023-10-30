@@ -101,6 +101,8 @@ function ContactForm() {
             size={"lg"}
             placeholder={"Please enter your name"}
             isRequired
+            borderColor="brand.200"
+            _hover={{ borderColor: "brand.300" }}
             {...register("name", {
               required: "Name is required",
               minLength: {
@@ -121,6 +123,8 @@ function ContactForm() {
             borderRadius="full"
             size={"lg"}
             placeholder={"Please enter your email address"}
+            borderColor="brand.200"
+            _hover={{ borderColor: "brand.300" }}
             {...register("email", {
               required: "Email address is required",
               pattern: {
@@ -141,6 +145,8 @@ function ContactForm() {
             borderRadius="full"
             size={"lg"}
             placeholder={"Please choose a subject"}
+            borderColor="brand.200"
+            _hover={{ borderColor: "brand.300" }}
             {...register("subject", {
               required: "Subject is required",
               minLength: {
@@ -160,6 +166,8 @@ function ContactForm() {
             focusBorderColor={"brand.300"}
             size={"lg"}
             placeholder={"Write your message here"}
+            borderColor="brand.200"
+            _hover={{ borderColor: "brand.300" }}
             {...register("message", {
               required: "Message is required",
               minLength: {
