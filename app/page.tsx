@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar";
 
 export default function Landing() {
   return (
-    <main className="font-poppins flex min-h-screen flex-col items-center justify-between bg-primary-50">
+    <main className="font-poppins flex min-h-screen flex-col items-center justify-between bg-white">
       <Navbar />
       <div className="flex flex-col sm:px-8 lg:px-24 sm:space-y-24 lg:space-y-10 items-center">
         <section
