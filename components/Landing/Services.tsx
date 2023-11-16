@@ -36,7 +36,9 @@ function Services() {
 
   return (
     <div className="flex flex-col space-y-2 lg:my-24 flex-wrap">
-      <div className="font-bold text-4xl text-center mt-16 mb-24">Services</div>
+      <div className="font-bold text-4xl text-center mt-16 mb-24 tracking-wider">
+        Services
+      </div>
 
       <div className="flex sm:space-y-24 xl:space-y-0 xl:flex-row sm:flex-col sm:space-x-0 xl:space-x-16 flex-wrap mx-16">
         {services.map((service) => {

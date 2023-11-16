@@ -93,7 +93,7 @@ const techStacks = [
 function TechStack() {
   return (
     <div className="flex flex-col space-y-2">
-      <div className="font-bold text-4xl text-center mt-16 mb-8">
+      <div className="font-bold text-4xl text-center mt-16 mb-8 tracking-wider">
         Our technology stack
       </div>
       {techStacks.map((stack) => {
